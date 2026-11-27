@@ -1,0 +1,25 @@
+collection,split,system,queries,nDCG@10,MRR@10,R@10,R@100,role
+scifact,train,BM25 (reference),809,0.6925,0.6615,0.811,0.9314,dev
+scifact,train,bert-base-mean,809,0.1243,0.1075,0.1913,0.4745,dev
+scifact,train,distilbert-msmarco-v4,809,0.5556,0.5229,0.6906,0.8566,dev
+scifact,train,distilbert-tas-b,809,0.6459,0.6182,0.7616,0.9046,dev
+scifact,train,bge-small,809,0.7469,0.7136,0.8694,0.9652,dev
+scifact,train,e5-small,809,0.7078,0.6823,0.8151,0.9423,dev
+scifact,test,BM25 (reference),300,0.6862,0.6506,0.8168,0.9209,test
+scifact,test,bert-base-mean,300,0.1334,0.1149,0.2108,0.4818,test
+scifact,test,distilbert-msmarco-v4,300,0.5293,0.5009,0.6458,0.847,test
+scifact,test,distilbert-tas-b,300,0.6428,0.6121,0.7615,0.891,test
+scifact,test,bge-small,300,0.7127,0.6822,0.8362,0.9417,test
+scifact,test,e5-small,300,0.6875,0.658,0.8057,0.9277,test
+nfcorpus,dev,BM25 (reference),324,0.2895,0.4915,0.1289,0.2281,dev
+nfcorpus,dev,bert-base-mean,324,0.0428,0.0853,0.0283,0.1031,dev
+nfcorpus,dev,distilbert-msmarco-v4,324,0.2604,0.4703,0.1139,0.2433,dev
+nfcorpus,dev,distilbert-tas-b,324,0.2932,0.507,0.1388,0.2747,dev
+nfcorpus,dev,bge-small,324,0.3278,0.5172,0.1498,0.3151,dev
+nfcorpus,dev,e5-small,324,0.3221,0.5367,0.1428,0.2986,dev
+nfcorpus,test,BM25 (reference),323,0.3226,0.5289,0.1525,0.2464,test
+nfcorpus,test,bert-base-mean,323,0.0429,0.1021,0.0226,0.101,test
+nfcorpus,test,distilbert-msmarco-v4,323,0.2677,0.458,0.1221,0.2432,test
+nfcorpus,test,distilbert-tas-b,323,0.3199,0.5242,0.1509,0.2802,test
+nfcorpus,test,bge-small,323,0.3438,0.5302,0.162,0.311,test
+nfcorpus,test,e5-small,323,0.3255,0.5237,0.1596,0.2971,test

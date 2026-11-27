@@ -1,0 +1,5 @@
+collection,split,system,queries,nDCG@10,MRR@10,R@10,R@100
+scifact,test,"a priori: stop+stem, k1=1.2, b=0.75",300,0.6862,0.6506,0.8168,0.9209
+scifact,test,"dev-chosen: nostop+stem, k1=1.2, b=0.75",300,0.6847,0.6515,0.8082,0.9213
+nfcorpus,test,"a priori: stop+stem, k1=1.2, b=0.75",323,0.3226,0.5289,0.1525,0.2464
+nfcorpus,test,"dev-chosen: nostop+stem, k1=1.5, b=0.5",323,0.3268,0.534,0.1574,0.246

@@ -1,0 +1,32 @@
+source,kind,text,BM25,bge-small,RRF
+42,ORIGINAL,A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.,2.0,1.0,1.0
+42,paraphrase,Having many small red blood cells makes people with two copies of the alpha-plus thalassaemia variant more prone to serious anaemia.,1.0,1.0,1.0
+42,keywords,microerythrocyte thalassemia anemia,18.0,2.0,5.0
+42,long question,"I read that in people who carry two copies of the alpha-plus thalassemia trait, having a high number of very small red blood cells might make severe anemia more likely; is there research on whether that is true?",,1.0,15.0
+118,ORIGINAL,Antibiotic induced alterations in the gut microbiome reduce resistance against Clostridium difficile,1.0,1.0,1.0
+118,paraphrase,Changes to intestinal bacteria caused by antimicrobial drugs make the host more susceptible to C. diff infection.,15.0,1.0,4.0
+118,keywords,antibiotics microbiome C. difficile,1.0,1.0,1.0
+118,long question,"When a patient takes antibiotics and the bacteria living in their intestines change as a result, does that make it easier for Clostridium difficile to cause an infection?",2.0,1.0,2.0
+129,ORIGINAL,Articles published in open access format are less likely to be cited than traditional journals.,1.0,1.0,1.0
+129,paraphrase,Freely available papers receive fewer citations than subscription-only publications.,1.0,1.0,1.0
+129,keywords,open access citations,1.0,1.0,1.0
+129,long question,"If a researcher publishes a paper so that anyone can read it for free, will it end up being cited less often than a paper in a traditional paywalled journal?",1.0,2.0,1.0
+163,ORIGINAL,Bariatric surgery has a positive impact on mental health.,1.0,1.0,1.0
+163,paraphrase,Weight-loss operations improve psychological well-being.,24.0,3.0,6.0
+163,keywords,bariatric surgery mental health,1.0,1.0,1.0
+163,long question,"For patients with severe obesity who undergo weight loss surgery, do conditions such as depression or anxiety tend to get better afterwards?",1.0,2.0,1.0
+219,ORIGINAL,CX3CR1 on the Th2 cells suppresses airway inflammation.,1.0,1.0,1.0
+219,synonym (entity),The fractalkine receptor expressed by T helper 2 lymphocytes dampens inflammation of the airways.,1.0,3.0,1.0
+219,keywords,CX3CR1 Th2 airway inflammation,1.0,1.0,1.0
+219,long question,"Does the chemokine receptor CX3CR1, when it is present on Th2 helper T cells, reduce inflammation in the airways of the lung, for example in asthma?",1.0,1.0,1.0
+248,ORIGINAL,Chenodeosycholic acid treatment increases whole-body energy expenditure.,1.0,1.0,1.0
+248,spelling corrected,Chenodeoxycholic acid treatment increases whole-body energy expenditure.,1.0,1.0,1.0
+248,synonym (abbreviation),Taking the bile acid CDCA raises the body's total energy use.,1.0,1.0,1.0
+248,keywords,chenodeoxycholic acid energy expenditure,1.0,1.0,1.0
+274,ORIGINAL,Combination nicotine replacement therapies with varenicline or bupropion lead to significantly higher long-term abstinence rates at 52 weeks than varenicline monotherapy.,1.0,1.0,1.0
+274,paraphrase,Combining smoking-cessation drugs with varenicline gives better one-year quit rates than varenicline by itself.,1.0,1.0,1.0
+274,keywords,varenicline bupropion abstinence,1.0,1.0,1.0
+236,ORIGINAL,Cell autonomous sex determination in somatic cells occurs in Passeriformes.,1.0,1.0,1.0
+236,paraphrase,"In songbirds, body cells determine their own sex independently of hormones.",7.0,1.0,2.0
+236,keywords,cell-autonomous sex somatic cells,1.0,1.0,1.0
+236,broader entity,Cell autonomous sex determination in somatic cells occurs in birds.,1.0,1.0,1.0

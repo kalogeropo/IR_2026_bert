@@ -1,0 +1,13 @@
+question,n_sources,judged-relevant doc among sources,abstained,cited,cited not provided,answer
+S1,1,True,False,['45638119'],[],"Yes, [45638119]."
+S1,3,True,False,['45638119'],[],"Yes, ALDH1 expression is associated with a poorer prognosis in breast cancer. [45638119]"
+S1,5,True,False,['45638119'],[],"Yes, ALDH1 expression is associated with a poorer prognosis in breast cancer. [45638119]"
+S2,1,True,True,[],[],INSUFFICIENT EVIDENCE IN SOURCES
+S2,3,True,False,['27768226'],[],"[27768226] Yes, open-access articles are more immediately recognized and cited than non-open-access articles."
+S2,5,True,False,['27768226'],[],"[27768226] Yes, open-access articles gain a significant citation advantage over non-open-access articles within the same time frame. Specifically, they are twic"
+U1,1,False,False,['29381091'],[],Yes [29381091].
+U1,3,False,False,['29381091'],[],Yes [29381091].
+U1,5,True,False,['29381091'],[],"Yes, cold exposure increases the recruitment of brown adipose tissue. [29381091]"
+U2,1,n/a,True,[],[],INSUFFICIENT EVIDENCE IN SOURCES
+U2,3,n/a,True,[],[],INSUFFICIENT EVIDENCE IN SOURCES
+U2,5,n/a,True,[],[],INSUFFICIENT EVIDENCE IN SOURCES

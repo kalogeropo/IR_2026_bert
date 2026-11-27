@@ -1,0 +1,68 @@
+[
+ {
+  "id": "S1",
+  "n_sources": 3,
+  "question": "Is ALDH1 expression associated with a poorer prognosis in breast cancer?",
+  "sources": [
+   "45638119",
+   "24349992",
+   "20886584"
+  ],
+  "answer": "Yes, ALDH1 expression is associated with a poorer prognosis in breast cancer. [45638119]",
+  "abstained": false,
+  "cited_ids": [
+   "45638119"
+  ],
+  "cited_not_provided": [],
+  "sentences_without_citation": []
+ },
+ {
+  "id": "S2",
+  "n_sources": 3,
+  "question": "Are articles published in open access format cited less often than articles in traditional journals?",
+  "sources": [
+   "27768226",
+   "4688277",
+   "10577574"
+  ],
+  "answer": "[27768226] Yes, open-access articles are more immediately recognized and cited than non-open-access articles.",
+  "abstained": false,
+  "cited_ids": [
+   "27768226"
+  ],
+  "cited_not_provided": [],
+  "sentences_without_citation": []
+ },
+ {
+  "id": "U1",
+  "n_sources": 3,
+  "question": "Does cold exposure increase the recruitment of brown adipose tissue?",
+  "sources": [
+   "29381091",
+   "14865329",
+   "4319174"
+  ],
+  "answer": "Yes [29381091].",
+  "abstained": false,
+  "cited_ids": [
+   "29381091"
+  ],
+  "cited_not_provided": [],
+  "sentences_without_citation": []
+ },
+ {
+  "id": "U2",
+  "n_sources": 3,
+  "question": "In which year did the US FDA first approve a CRISPR-based gene-editing therapy?",
+  "sources": [
+   "3578380",
+   "432261",
+   "13296399"
+  ],
+  "answer": "INSUFFICIENT EVIDENCE IN SOURCES",
+  "abstained": true,
+  "cited_ids": [],
+  "cited_not_provided": [],
+  "sentences_without_citation": []
+ }
+]

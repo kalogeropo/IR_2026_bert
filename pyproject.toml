@@ -1,0 +1,33 @@
+[project]
+name = "ir-2026-bert"
+version = "0.1.0"
+description = "Explanatory notebook and helper package: BM25, BERT-family dense retrieval, rank fusion and LLM answers on BEIR SciFact and NFCorpus"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "accelerate>=1.16.0",
+    "bm25s>=0.3.16",
+    "ipykernel>=7.4.0",
+    "ir-measures>=0.4.3",
+    "jupyter>=1.1.1",
+    "nbconvert>=7.17.2",
+    "numpy>=2.5.5",
+    "pandas>=3.1.1",
+    "pyarrow>=26.0.1",
+    "pystemmer>=3.1.0",
+    "sentence-transformers>=6.3.0",
+    "tabulate>=0.10.0",
+    "torch>=2.15.0",
+    "transformers>=5.24.1",
+]
+
+[dependency-groups]
+dev = []
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["irlab"]

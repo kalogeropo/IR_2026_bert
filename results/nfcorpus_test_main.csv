@@ -1,0 +1,4 @@
+collection,split,system,queries,nDCG@10,MRR@10,R@10,R@100
+nfcorpus,test,BM25,323,0.3226,0.5289,0.1525,0.2464
+nfcorpus,test,bge-small,323,0.3438,0.5302,0.162,0.311
+nfcorpus,test,"RRF(BM25, bge-small)",323,0.3634,0.5684,0.1713,0.312

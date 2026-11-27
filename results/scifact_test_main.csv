@@ -1,0 +1,4 @@
+collection,split,system,queries,nDCG@10,MRR@10,R@10,R@100
+scifact,test,BM25,300,0.6862,0.6506,0.8168,0.9209
+scifact,test,bge-small,300,0.7127,0.6822,0.8362,0.9417
+scifact,test,"RRF(BM25, bge-small)",300,0.7279,0.6952,0.8546,0.9683

@@ -1,0 +1,5 @@
+question,sentence,cited,cited id was provided,abstained
+S1,"Yes, ALDH1 expression is associated with a poorer prognosis in breast cancer. [45638119]",['45638119'],True,False
+S2,"[27768226] Yes, open-access articles are more immediately recognized and cited than non-open-access articles.",['27768226'],True,False
+U1,Yes [29381091].,['29381091'],True,False
+U2,INSUFFICIENT EVIDENCE IN SOURCES,[],True,True

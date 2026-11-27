@@ -1,0 +1,7 @@
+collection,split,system,queries,nDCG@10,MRR@10,R@10,R@100
+scifact,test,RRF k=60 (a priori),300,0.7279,0.6952,0.8546,0.9683
+scifact,test,RRF k=1 (dev-chosen),300,0.7284,0.6951,0.8496,0.9683
+scifact,test,min-max α=0.3 (dev-chosen),300,0.7289,0.6993,0.8429,0.9667
+nfcorpus,test,RRF k=60 (a priori),323,0.3634,0.5684,0.1713,0.312
+nfcorpus,test,RRF k=30 (dev-chosen),323,0.3638,0.5685,0.1714,0.312
+nfcorpus,test,min-max α=0.3 (dev-chosen),323,0.3605,0.5597,0.1686,0.317
