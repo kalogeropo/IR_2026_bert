@@ -11,6 +11,18 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
+# Machine-specific settings (device and folders) come from PROJECT_ROOT/.env.
+# Variables already set in the shell are not overridden.
+from dotenv import load_dotenv  # noqa: E402
+
+load_dotenv(PROJECT_ROOT / ".env")
+
+
+def _env_path(name: str, default: str) -> Path:
+    """Folder from the environment; relative paths are taken relative to the project."""
+    p = Path(os.environ.get(name, default)).expanduser()
+    return p if p.is_absolute() else PROJECT_ROOT / p
+
 
 @dataclass(frozen=True)
 class CollectionSpec:
@@ -120,9 +132,9 @@ ENCODERS = {
 class LabConfig:
     seed: int = 13
     device: str = os.environ.get("IRLAB_DEVICE", "auto")  # "auto", "cpu", "cuda"
-    data_dir: Path = Path(os.environ.get("IRLAB_DATA_DIR", PROJECT_ROOT / "data"))
-    cache_dir: Path = Path(os.environ.get("IRLAB_CACHE_DIR", PROJECT_ROOT / "cache"))
-    results_dir: Path = Path(os.environ.get("IRLAB_RESULTS_DIR", PROJECT_ROOT / "results"))
+    data_dir: Path = _env_path("IRLAB_DATA_DIR", "data")
+    cache_dir: Path = _env_path("IRLAB_CACHE_DIR", "cache")
+    results_dir: Path = _env_path("IRLAB_RESULTS_DIR", "results")
     # --- first stage -------------------------------------------------------
     retrieval_depth: int = 100        # documents kept per query by every first-stage run
     bm25_k1: float = 1.2              # a-priori textbook / Elasticsearch default (not tuned)

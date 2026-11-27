@@ -1,29 +1,29 @@
 stage,component,collection,seconds,items,ms/item,device,from_cache,note
-setup,load collection,scifact,0.031,,,cuda,False,
-setup,"BM25 index (stop+stem, k1=1.2, b=0.75)",scifact,0.452,5183.0,0.09,cuda,False,
-query,BM25 search,scifact,0.051,300.0,0.17,cuda,False,
+setup,load collection,scifact,0.032,,,cuda,False,
+setup,"BM25 index (stop+stem, k1=1.2, b=0.75)",scifact,0.46,5183.0,0.09,cuda,False,
+query,BM25 search,scifact,0.052,300.0,0.17,cuda,False,
 setup,"encode corpus [bge-small, len 512]",scifact,8.05,5183.0,1.55,cuda,True,computed on cuda; model load 11.76 s
-setup,load encoder [bge-small],scifact,1.241,,,cuda,False,
-query,"dense encode+search [bge-small, cos]",scifact,0.248,300.0,0.83,cuda,False,
+setup,load encoder [bge-small],scifact,0.805,,,cuda,False,
+query,"dense encode+search [bge-small, cos]",scifact,0.237,300.0,0.79,cuda,False,
 setup,"encode corpus [bert-base-mean, len 512]",scifact,21.12,5183.0,4.07,cuda,True,computed on cuda; model load 27.28 s
-setup,load encoder [bert-base-mean],scifact,0.985,,,cuda,False,
-query,"dense encode+search [bert-base-mean, cos]",scifact,0.188,300.0,0.63,cuda,False,
-query,RRF fusion (k=60),scifact,0.009,300.0,0.03,cuda,False,
-setup,load LLM [Qwen/Qwen2.5-1.5B-Instruct],scifact,1.046,,,cuda,False,
-query,BM25 search,scifact,0.0,1.0,0.38,cuda,False,
-query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,5.3,cuda,False,
-query,RRF fusion (k=60),scifact,0.0,1.0,0.05,cuda,False,
-query,RRF fusion (k=60),scifact,0.0,1.0,0.07,cuda,False,
-generate,LLM answer (3 sources),scifact,0.37,27.0,13.7,cuda,False,1298 prompt tokens; items = generated tokens
-query,BM25 search,scifact,0.0,1.0,0.42,cuda,False,
-query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,5.06,cuda,False,
+setup,load encoder [bert-base-mean],scifact,0.879,,,cuda,False,
+query,"dense encode+search [bert-base-mean, cos]",scifact,0.191,300.0,0.64,cuda,False,
+query,RRF fusion (k=60),scifact,0.008,300.0,0.03,cuda,False,
+setup,load LLM [Qwen/Qwen2.5-1.5B-Instruct],scifact,0.965,,,cuda,False,
+query,BM25 search,scifact,0.0,1.0,0.3,cuda,False,
+query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,5.47,cuda,False,
+query,RRF fusion (k=60),scifact,0.0,1.0,0.06,cuda,False,
+query,RRF fusion (k=60),scifact,0.0,1.0,0.06,cuda,False,
+generate,LLM answer (3 sources),scifact,0.38,27.0,14.07,cuda,False,1298 prompt tokens; items = generated tokens
+query,BM25 search,scifact,0.0,1.0,0.31,cuda,False,
+query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,5.0,cuda,False,
 query,RRF fusion (k=60),scifact,0.0,1.0,0.06,cuda,False,
 generate,LLM answer (3 sources),scifact,0.25,28.0,8.93,cuda,False,1148 prompt tokens; items = generated tokens
-query,BM25 search,scifact,0.0,1.0,0.3,cuda,False,
-query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,4.61,cuda,False,
-query,RRF fusion (k=60),scifact,0.0,1.0,0.04,cuda,False,
-generate,LLM answer (3 sources),scifact,0.12,12.0,10.0,cuda,False,976 prompt tokens; items = generated tokens
 query,BM25 search,scifact,0.0,1.0,0.33,cuda,False,
-query,"dense encode+search [bge-small, cos]",scifact,0.004,1.0,4.47,cuda,False,
+query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,4.78,cuda,False,
+query,RRF fusion (k=60),scifact,0.0,1.0,0.05,cuda,False,
+generate,LLM answer (3 sources),scifact,0.13,12.0,10.83,cuda,False,976 prompt tokens; items = generated tokens
+query,BM25 search,scifact,0.0,1.0,0.33,cuda,False,
+query,"dense encode+search [bge-small, cos]",scifact,0.005,1.0,4.76,cuda,False,
 query,RRF fusion (k=60),scifact,0.0,1.0,0.05,cuda,False,
 generate,LLM answer (3 sources),scifact,0.11,10.0,11.0,cuda,False,1057 prompt tokens; items = generated tokens

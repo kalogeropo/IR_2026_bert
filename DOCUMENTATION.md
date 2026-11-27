@@ -31,7 +31,7 @@ Contents
 | `results/` | CSV/JSON outputs written by the notebook when it runs: main tables per collection, every tuning table, bootstrap intervals, LLM answers, cost tables, and the software environment. |
 | `pyproject.toml`, `uv.lock` | Exact dependency versions. |
 
-The repository contains only this notebook, the `irlab/` package and the project files (`pyproject.toml`, `uv.lock`, `README.md`, this file). The LLM questions and the query reformulations are defined inside the notebook. `data/`, `cache/` and `results/` are created when the notebook runs.
+The repository contains only this notebook, the `irlab/` package and the project files (`pyproject.toml`, `uv.lock`, `.env` with the device and folder settings, `README.md`, this file). The LLM questions and the query reformulations are defined inside the notebook. `data/`, `cache/` and `results/` are created when the notebook runs.
 
 **Scope decisions made during revision.** The notebook is written as an explanatory document, not as a guided lesson: it has no exercises,
 time allocations or instructor notes. Chunking (splitting documents into windows) was evaluated and removed (§11). A cross-encoder reranking stage was implemented and evaluated in an earlier version and then
@@ -375,11 +375,13 @@ uv sync                                      # exact versions from uv.lock (or: 
 uv run jupyter lab                           # open LLM_BERT_Information_Retrieval_Lab.ipynb and run all cells
 # or execute headless, top to bottom, in a fresh kernel:
 uv run jupyter nbconvert --to notebook --execute --inplace LLM_BERT_Information_Retrieval_Lab.ipynb
-# force the CPU:
+# force the CPU for one run (or set IRLAB_DEVICE=cpu in .env):
 IRLAB_DEVICE=cpu uv run jupyter nbconvert --to notebook --execute --inplace LLM_BERT_Information_Retrieval_Lab.ipynb
 ```
 
-**Environment variables.** None is required. Each is read once when `irlab` is imported:
+**Machine settings (`.env`).** The device and the three folders are in the `.env` file at the project root. `irlab/config.py` loads it
+with `python-dotenv` when `irlab` is imported. A variable already set in the shell takes precedence over the file. Relative paths are
+relative to the project folder, and `~` is expanded. If the file is missing, the same defaults apply:
 
 | variable | default | meaning |
 |---|---|---|
@@ -388,8 +390,9 @@ IRLAB_DEVICE=cpu uv run jupyter nbconvert --to notebook --execute --inplace LLM_
 | `IRLAB_CACHE_DIR` | `cache/` | embedding cache |
 | `IRLAB_RESULTS_DIR` | `results/` | CSV/JSON outputs |
 
-Because they are read at import time, setting them inside a running notebook *after* `import irlab` has no effect. The notebook's configuration
-cell passes `device=os.environ.get("IRLAB_DEVICE", "auto")` explicitly, so the device choice is visible there.
+Because they are read at import time, edit `.env` before starting the kernel (or restart it afterwards); changing a variable inside a running
+notebook after `import irlab` has no effect. The notebook's configuration cell passes `device=os.environ.get("IRLAB_DEVICE", "auto")`
+explicitly, so the device choice is visible there.
 
 **What "reproducible" means here.** Data and models are pinned by commit hash. Seeds are fixed, all tie-breaking is deterministic, and the LLM
 decodes greedily. Embeddings are cached, so a rerun on the same cache gives identical numbers: repeated GPU runs reproduced every table and all
